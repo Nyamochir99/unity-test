@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
             targetPosition += Vector3.right * laneDistance;
         }
 
-        Vector3 newPosition = Vector3.Lerp(transform.position, targetPosition, 80 * Time.deltaTime);
+        Vector3 newPosition = Vector3.Lerp(transform.position, targetPosition, 15 * Time.deltaTime);
 
         Vector3 move = (newPosition - transform.position) + direction * Time.deltaTime;
         controller.Move(move);
